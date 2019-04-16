@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  priorities: MyString
+  gratitude: MyString
+  accomplishments: MyString
+  improvements: MyString
+  date: MyString
+  img_url: MyString
+
+two:
+  priorities: MyString
+  gratitude: MyString
+  accomplishments: MyString
+  improvements: MyString
+  date: MyString
+  img_url: MyString
