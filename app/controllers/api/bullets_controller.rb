@@ -11,7 +11,7 @@ class Api::BulletsController < ApplicationController
     end
 
     def create
-        @bullet = Entry.create(bullet_params)
+        @bullet = Entry.create(bullet_params.merge({date: Time.now}))
         render json: @bullet
     end
 
@@ -20,9 +20,9 @@ class Api::BulletsController < ApplicationController
         render json: @bullet
     end
 
-    def delete
+    def destroy
         @bullet.destroy
-        render json: @bullets
+        render json: @bullet
     end
 
     private
